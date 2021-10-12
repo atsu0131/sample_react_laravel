@@ -1,17 +1,15 @@
-
 docker-compose up -d
 
 docker-compose exec app bash
 cd /var/www/app1
 
-composer create-project --prefer-dist "laravel/laravel=6.*" .
+composer create-project --prefer-dist "laravel/laravel=8.*" .
 npm install
 
 cd /var/www/app2
 
-composer create-project --prefer-dist "laravel/laravel=6.*" .
+composer create-project --prefer-dist "laravel/laravel=8.*" .
 npm install
-
 
 vi /etc/hosts
 
