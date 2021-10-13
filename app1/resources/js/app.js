@@ -5,6 +5,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import About from "./About";
+import TodoList from "./TodoList";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <NavBar />
             <Route path="/about" component={About} />
             <Route exact path="/" component={Home} />
+            <Route path="/todo" component={TodoList} />
         </BrowserRouter>
     );
 };
