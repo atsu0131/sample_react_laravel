@@ -2124,7 +2124,7 @@ function Index(props) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return axios__WEBPACK_IMPORTED_MODULE_2___default().get("api/books/");
+              return axios__WEBPACK_IMPORTED_MODULE_2___default().get("http://project1.local/api/books");
 
             case 2:
               response = _context.sent;
@@ -2207,10 +2207,10 @@ __webpack_require__.r(__webpack_exports__);
 var NavBar = function NavBar() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-      to: "/",
+      to: "/app/",
       children: "Home"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-      to: "/about",
+      to: "/app/about",
       children: "About"
     })]
   });
@@ -2276,14 +2276,14 @@ __webpack_require__.r(__webpack_exports__);
 var App = function App() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.BrowserRouter, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-      path: "/about",
+      path: "/app/about",
       component: _About__WEBPACK_IMPORTED_MODULE_4__["default"]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
       exact: true,
-      path: "/",
+      path: "/app/",
       component: _Home__WEBPACK_IMPORTED_MODULE_3__["default"]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-      path: "/todo",
+      path: "/app/todo",
       component: _TodoList__WEBPACK_IMPORTED_MODULE_5__["default"]
     })]
   });

@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-
 function Index(props) {
     const [books, setBooks] = useState([]);
 
@@ -11,7 +10,7 @@ function Index(props) {
     }, []);
 
     const getbooks = async () => {
-        const response = await axios.get("api/books/");
+        const response = await axios.get("http://project1.local/api/books");
         console.log(response.data);
         setBooks(response.data.book);
     };

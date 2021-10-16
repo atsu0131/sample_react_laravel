@@ -11,9 +11,9 @@ const App = () => {
     return (
         <BrowserRouter>
             <NavBar />
-            <Route path="/about" component={About} />
-            <Route exact path="/" component={Home} />
-            <Route path="/todo" component={TodoList} />
+            <Route path="/app/about" component={About} />
+            <Route exact path="/app/" component={Home} />
+            <Route path="/app/todo" component={TodoList} />
         </BrowserRouter>
     );
 };
